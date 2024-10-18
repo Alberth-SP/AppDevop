@@ -15,7 +15,7 @@ public class Controller {
 		return ResponseEntity.ok("Hola mundo, te damos la bienvenida " + name);
 	}
 	
-	@GetMapping("/date")
+	@GetMapping("/date/current")
 	public ResponseEntity<?> getFecha(){
 		return ResponseEntity.ok("La fecha es " + (new Date()).toString() );
 	}
