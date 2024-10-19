@@ -6,11 +6,11 @@ FROM openjdk:24-ea-19-bullseye
 WORKDIR /app
 
 #copiamos archivo jar al contenedor
-#COPY app.jar app.jar
+COPY target/TestDevop-0.0.1-SNAPSHOT app.jar
 
 
 #Exponemos el puerto
 EXPOSE 8090
 
 #Ejecutamos la apliación
-CMD ["java", "-jar", "target/TestDevop-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "app.jar"]
