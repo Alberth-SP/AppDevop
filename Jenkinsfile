@@ -73,5 +73,10 @@ pipeline{
             }
             
         }
+        stage("Deploy"){
+            steps{
+                sh 'Completando despliegue'
+            }
+        }
     }
 }
