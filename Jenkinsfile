@@ -75,7 +75,7 @@ pipeline{
         }
         stage("Deploy"){
             steps{
-                sh 'Completando despliegue'
+                echo 'Completando despliegue'
             }
         }
     }
