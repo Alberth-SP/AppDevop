@@ -6,7 +6,7 @@ FROM openjdk:24-ea-19-bullseye
 WORKDIR /app
 
 #copiamos archivo jar al contenedor
-COPY target/TestDevop-0.0.1-SNAPSHOT app.jar
+COPY target/TestDevop-0.0.1-SNAPSHOT.jar app.jar
 
 
 #Exponemos el puerto
